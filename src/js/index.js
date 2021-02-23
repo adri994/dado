@@ -27,7 +27,7 @@ const printResult = (number,x) => {
     const result = document.getElementById(`number${x.toString()}`);
     result.setAttribute('src',dados[(number-1)])
     
-    result.setAttribute('src','./assets/dado1.png')
+    result.setAttribute('src',`./assets/dado${x.toString()}.png`)
         
 }
 

@@ -25,9 +25,10 @@ const lanzarDado = () =>(Math.floor((Math.random()*6) + 1))
 
 const printResult = (number,x) => {
     const result = document.getElementById(`number${x.toString()}`);
+    console.log(result.getAttribute("src"))
     result.setAttribute('src',dados[(number-1)])
     
-    result.setAttribute('src',`./assets/dado${x.toString()}.png`)
+    /* result.setAttribute('src',`./assets/dado${x.toString()}.png`) */
         
 }
 
